@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  sdist:
+    docker:
+      - image: romanandreg/stack:latest
+    environment:
+    steps:
+      - checkout
+      - run: "cd ./week2/lab2 && stack test"
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - sdist
+      
