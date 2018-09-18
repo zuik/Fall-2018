@@ -6,7 +6,7 @@ jobs:
     environment:
     steps:
       - checkout
-      - run: "cd ./week2/lab2 && stack test"
+      - run: "cd ./assignments/week2/lab2 && stack test"
 
 workflows:
   version: 2
